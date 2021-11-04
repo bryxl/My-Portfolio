@@ -1,0 +1,874 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: "Maragsa";
+	src: url("../fonts/Maragsâ-Display.otf");
+}
+
+/* CSS Document */
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: black;
+}
+
+h1 {
+	font-family: "Maragsa", 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
+	font-size: 72px;
+	color: white;
+}
+
+h2 {
+	font-family: "Maragsa", 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
+	font-size: 64px;
+	color: white;
+}
+
+h3 {
+	font-family: "Maragsa", 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
+	font-size: 54px;
+	color: white;
+}
+
+h4 {
+	font-family: "Maragsa", 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
+	font-size: 42px;
+	color: white;
+}
+
+h5 {
+	font-family: "Maragsa", 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
+	font-size: 30px;
+	color: white;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+h6 {
+	font-family: "Maragsa", 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
+	font-size: 24px;
+	color: white;
+}
+
+p {
+	font-family: 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
+	font-size: 20px;
+	color: white;
+}
+
+a {
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	color: white;
+	text-decoration-style: none;
+}
+
+a:link {
+	color: white;
+}
+
+a:hover {
+	color: #FF21D8;
+}
+
+img {
+	text-align: center;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+/* Nav Bar */
+
+.nav-link {
+	font-family: "Maragsa", 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
+	font-size: 40px;
+	color: white;
+}
+
+.nav-link:hover {
+	cursor: pointer;
+	color: white !important;
+	transition: 0.3s;
+}
+
+.nav-link:active {
+	color: #FF21D8;
+}
+
+/* Hero Image */
+
+.hero-image {
+	background-color: black;
+	padding: 80px;
+	;
+}
+
+.hero-image-blurb {
+	grid-area: item1;
+	float: left;
+}
+
+.hero-image-image img {
+	height: 500px;
+	float: right;
+	margin-right: 100px;
+}
+
+.goDown {
+	/*display: block;*/
+	text-align: center;
+	clear: both;
+	margin-top: 400px;
+}
+
+.eye {
+	margin-bottom: 20px;
+}
+
+@keyframes bouncingDownArrow {
+	from { transform: translate3d(0, 0, 0);}
+	50% {transform: translate3d(0, 45px, 0)}
+	to {transform: translate3d(0, 0, 0);}
+}
+
+.goDown img {
+	height: 80px;
+	animation-name: bouncingDownArrow;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+
+/* Recent Work */
+
+.recent-work {
+	padding: 10px;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.recent-work h2 {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.recent-work-image1 {
+	padding: 80px;
+	border: solid 2px white;
+	border-radius: 25px;
+	margin-bottom: 20px;
+}
+
+.recent-work-image1 img {
+	padding-top: 80px;
+}
+
+.recent-work-image2 {
+	padding: 80px;
+	padding-bottom: 0;
+	border: solid 2px white;
+	border-radius: 25px;
+	margin-bottom: 20px;
+}
+
+.recent-work-image2 img {
+	display: block;
+	margin: auto;
+	padding-top: 80px;
+}
+
+.recent-work-image3 {
+	padding: 80px;
+	padding-bottom: 0;
+	border: solid 2px white;
+	border-radius: 25px;
+	margin-bottom: 20px;
+}
+
+.recent-work-image3 img {
+	display: block;
+	margin: auto;
+	padding-top: 80px;
+}
+
+.hideme {
+	opacity: 0;
+}
+
+.viewAll {
+	padding: 10px;
+	padding-top: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.viewAll a {
+	font-family: 'Maragsa', "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 80px;
+	padding-right: 30px;
+}
+
+.viewAll a:hover {
+	text-decoration: none;
+}
+
+@keyframes bouncingRightArrow{
+	0% {transform: translate3d(0, 0, 0);}
+	50% {transform: translate3d(30px, 0, 0);}
+	100% {transform: translate3d(0, 0, 0);}
+}
+
+.viewAll img {
+	height: 50px;
+	animation-name: bouncingRightArrow;
+	animation-duration: 2.5s;
+	animation-iteration-count: infinite;
+}
+
+
+
+/* Work */
+
+.work {
+	background-color: black;
+	padding: 20px;
+}
+
+.workNav {
+	text-align: center;
+	display: flex;
+	justify-content: space-around;
+	font-size: 40px;
+}
+
+.workNav a {
+	padding: 20px;
+}
+
+.workNav a:hover {
+	color: 	#FF21D8 !important;
+}
+
+.workContainerSite {
+	border: 2px solid white;
+	border-radius: 15px;
+	padding: 40px;
+	margin: 10px;
+}
+
+.workContainerMobile {
+	border: 2px solid white;
+	border-radius: 15px;
+	padding: 40px;
+	padding-bottom: 0px;
+	margin: 10px;
+}
+
+.image1 {
+	padding: 150px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+.image2 {
+	display: block;
+	margin: auto;
+	padding: 150px;
+	padding-bottom: 0px;
+	padding-top: 20px;
+}
+
+.image3 {
+	display: block;
+	margin: auto;
+	padding: 150px;
+	padding-bottom: 0px;
+	padding-top: 20px;
+}
+
+.image4 {
+	display: block;
+	margin: auto;
+	padding: 150px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+.cs-hero {
+	padding: 40px;
+}
+
+.case-study-hero {
+	padding: 40px;
+	padding-bottom: 0px;
+	border: solid 2px white;
+	border-radius: 15px;
+}
+
+.case-study-blurb {
+	position: relative;
+	top: 200px;
+}
+
+.cs-hero-img-holder {
+	position: relative;
+	left: 1000px;
+	bottom: 150px;
+}
+
+.case-study {
+	padding: 60px;
+}
+
+.team {
+	position: relative;
+	left: 100px;
+	top: 10px;
+
+}
+
+.blindCat-new-hp {
+	text-align: center;
+	display: block;
+	margin: auto;
+	max-height: 3000px;
+	padding-top: 150px;
+}
+
+figcaption {
+	text-align: center;
+	padding: 10px;
+	color: white;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	padding-bottom: 100px;
+}
+
+.research {
+	padding-top: 80px;
+}
+
+.case-study img {
+	text-align: center;
+	margin: auto;
+	display: block;
+	border-radius: 15px;
+}
+
+.problemStatement {
+	border: solid 2px white;
+	border-radius: 10px;
+	padding: 30px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.case-study li {
+	color: white;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 18px;
+}
+
+
+/* About Me */
+
+.aboutMe {
+	background-color: black;
+	padding: 20px;
+	padding-top: 50px;
+	padding-bottom: 100px;
+	width: 100%
+}
+
+.aboutMe h1 {
+	text-align: center;
+	padding: 20px;
+	margin-bottom: 50px;
+}
+
+.headshot {
+	height: 350px;
+	margin: 10px;
+	margin-left: 300px;
+	margin-right: 100px;
+	float: left;
+}
+
+.bio-container {
+	text-align: justify;
+	width: 90%;
+	height: auto;
+}
+
+.btn {
+	border-color: #FF21D8;
+	border-radius: 0px;
+	color: white;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+
+.btn:hover {
+	background-color: #FF21D8;
+	border-color: #FF21D8;
+}
+
+.mySkills {
+	background-color: black;
+	padding: 20px;
+	padding-top: 50px;
+	padding-bottom: 100px;
+	clear: both;
+}
+
+.mySkills h2 {
+	text-align: center;
+	padding: 10px;
+	margin-bottom: 30px;
+}
+
+.skillsContainer {
+	display: flex;
+	justify-content: space-around;
+}
+
+.skill {
+	padding: 30px;
+	border: 2px solid white;
+	width: 20rem;
+}
+
+.card-img {
+	display: block;
+	padding: 10px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	width: 50%;
+}
+
+.card-deck img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+.card-body {
+	padding-top: 30px;
+}
+
+/* Contact */
+
+.contactForm {
+	background-color: black;
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid white; 
+	box-sizing: border-box; 
+	margin-top: 6px;
+	margin-bottom: 16px; 
+	resize: vertical; 
+	background-color: black;
+	color: white;
+  }
+
+  label {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	color: white;
+	font-size: 24px;
+  }
+
+  textarea {
+	  background-color: black;
+	  color: white;
+	  width: 100%;
+	  padding: 12px;
+	  margin-top: 6px; 
+	  margin-bottom: 16px;
+	  border: 1px solid white; 
+	  box-sizing: border-box; 
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+	background-color: black;
+	color: white;
+	padding: 12px 20px;
+	border: 2px solid #FF21D8;
+	cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+	background-color: #FF21D8;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+	padding: 20px;
+	background-color: black;
+	width: 100%;
+  }
+
+/* Footer */
+
+footer {
+	background-color: black;
+	text-align: center;
+	padding: 10px;
+}
+
+.footerBorder {
+	border: 2px solid white;
+	border-radius: 10px;
+	padding: 20px;
+	padding-top: 30px;
+}
+
+#footer-logo {
+	height: 60px;
+	margin: auto;
+}
+
+.footer-bottom {
+	display: flex;
+	justify-content: space-between;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 20px;
+}
+
+p .footer {
+	font-size: 26px;
+	grid-area: copyright;
+}
+
+.footer-bottom a {
+	text-decoration: none;
+}
+
+.footer-bottom img {
+	height: 25px;
+	padding-right: 10px;
+}
+
+.footer-bottom img:hover {
+	margin-bottom: 4px;
+}
+
+.social-links {
+	grid-area: socials;
+}
+
+@media only screen and (max-width: 600px) {
+
+	.hero-image-blurb h1 {
+		font-size: 34px;
+	}
+
+	/* Work */
+	
+	.workContainerSite {
+		padding: 0px;
+		margin: 10px;
+	}
+			
+			.workContainerMobile {
+				padding: 0px;
+				margin: 10px;
+				padding-bottom: 0px;
+			}
+			
+			.image1 {
+				padding: 5px;
+				padding-bottom: 5px;
+				padding-top: 5px;
+			}
+			
+			.image2 {
+				padding: 5px;
+				padding-bottom: 0px;
+				padding-top: 5px;
+			}
+			
+			.image3 {
+				padding: 5px;
+				padding-bottom: 0px;
+				padding-top: 5px;
+			}
+			
+			.image4 {
+				padding: 5px;
+				padding-bottom: 5px;
+				padding-top: 5px;
+			}
+
+}
+
+@media only screen and (max-width : 768px) {
+
+	.hero-image-blurb h1 {
+		font-size: 50px;
+		margin-top: 20px;
+	}
+
+	.hero-image-image img {
+		float: none;
+		height: auto;
+		margin-right: 0px;
+	}
+
+
+	.goDown {
+		text-align: center;
+		clear: both;
+		margin-top: 300px;
+	}
+	
+	.btn {
+		display: flex;
+		justify-content: center;
+	}
+
+	.footer-bottom {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+		grid-template-areas: 
+			'copyright'
+			'socials'
+		;
+	}
+
+
+	.hiddenText {
+		text-align: center;
+		top: 50px;
+		left: 0px;
+	}
+
+	.hiddenText h3 {
+		font-size: 50px;
+	}
+
+		/* Work */
+	
+		.workContainerSite {
+			padding: 10px;
+			margin: 10px;
+		}
+		
+		.workContainerMobile {
+			padding: 10px;
+			padding-bottom: 0px;
+		}
+		
+		.image1 {
+			padding: 20px;
+			padding-bottom: 20px;
+			padding-top: 20px;
+		}
+		
+		.image2 {
+			padding: 20px;
+			padding-bottom: 0px;
+			padding-top: 20px;
+		}
+		
+		.image3 {
+			padding: 20px;
+			padding-bottom: 0px;
+			padding-top: 20px;
+		}
+		
+		.image4 {
+			padding: 20px;
+			padding-bottom: 20px;
+			padding-top: 20px;
+		}
+}
+
+@media only screen and (max-width: 992px) {
+	
+	.navbar-brand img{
+		height: 30px;
+	}
+
+	.hero-image-blurb h1 {
+		font-size: 70px;
+		float: none;
+	}
+
+	.headshot {
+		height: 250px;
+		margin: 10px;
+		float: none;
+	}
+
+	.btn {
+		display: flex;
+	}
+
+	.skillsContainer {
+		display: block;
+	}
+
+	.skill {
+		width: 100%;
+	}
+
+	h1 {
+		font-family: "Maragsa", 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
+		font-size: 64px;
+		color: white;
+	}
+	
+	h2 {
+		font-family: "Maragsa", 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
+		font-size: 52px;
+		color: white;
+	}
+	
+	h3 {
+		font-family: "Maragsa", 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
+		font-size: 42px;
+	}
+	
+	h4 {
+		font-family: "Maragsa", 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
+		font-size: 32px;
+		color: white;
+	}
+	
+	h5 {
+		font-family: "Maragsa", 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
+		font-size: 28px;
+		color: white;
+	}
+	
+	h6 {
+		font-family: "Maragsa", 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
+		font-size: 24px;
+		color: white;
+	}
+	
+	p {
+		font-family: 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
+		font-size: 18px;
+		color: white;
+	}
+	
+	a {
+		font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+		color: white;
+		text-decoration-style: none;
+	}
+
+	/* Recent Work */
+
+.recent-work-image1 {
+	padding: 50px;
+	margin-bottom: 20px;
+}
+
+.recent-work-image1 img {
+	padding-top: 20px;
+}
+
+.recent-work-image2 {
+	padding: 50px;
+	padding-bottom: 0;
+	margin-bottom: 20px;
+}
+
+.recent-work-image2 img {
+	padding-top: 20px;
+}
+
+.recent-work-image3 {
+	padding: 50px;
+	padding-bottom: 0;
+	margin-bottom: 20px;
+}
+
+.recent-work-image3 img {
+	padding-top: 20px;
+}
+
+	/* Work */
+
+	.workContainerSite {
+		padding: 30px;
+		margin: 10px;
+	}
+	
+	.workContainerMobile {
+		padding: 30px;
+		padding-bottom: 0px;
+	}
+	
+	.image1 {
+		padding: 100px;
+		padding-bottom: 20px;
+		padding-top: 20px;
+	}
+	
+	.image2 {
+		padding: 100px;
+		padding-bottom: 0px;
+		padding-top: 20px;
+	}
+	
+	.image3 {
+		padding: 100px;
+		padding-bottom: 0px;
+		padding-top: 20px;
+	}
+	
+	.image4 {
+		padding: 100px;
+		padding-bottom: 20px;
+		padding-top: 20px;
+	}
+
+	.case-study-hero {
+		padding: 40px;
+		padding-bottom: 0px;
+		border: solid 2px white;
+		border-radius: 15px;
+	}
+	
+	/* Case Study */
+
+	.case-study-blurb {
+		position: none;
+		top: 0;
+	}
+	
+	.cs-hero-img-holder {
+		position: none;
+		left: 0;
+		bottom: 0px;
+	}
+	
+	.case-study {
+		padding: 60px;
+	}
+	
+	.team {
+		position: relative;
+		left: 500px;
+	
+	}
+
+}
+
+

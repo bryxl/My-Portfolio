@@ -79,48 +79,83 @@ img {
 	margin-right: 0;
 }
 
+.contact-button {
+	text-align: center;
+	position: fixed;
+	bottom: 10px;
+	right: 20px;
+}
+
+.contact-button a {
+	text-decoration: none;
+}
+
+.contact-button img {
+	height: 50px;
+	margin-bottom: 10px;
+}
+
+.contact-button p {
+	opacity: 75%;
+}
+
+.contact-button p:hover {
+	opacity: 100%;
+}
+
 /* Nav Bar */
 
 .nav-link {
 	font-family: "Maragsa", 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
 	font-size: 40px;
 	color: white;
+	margin-right: 10px;
 }
 
 .nav-link:hover {
 	cursor: pointer;
-	color: white !important;
+	color: #FF21D8 !important;
 	transition: 0.3s;
 }
 
-.nav-link:active {
-	color: #FF21D8;
+.social-links a {
+	text-decoration: none !important;
+}
+
+.social-links img {
+	height: 25px;
+	margin-right: 8px;
+	padding: 1px;
+}
+
+.social-links img:hover {
+	padding: 0px;
 }
 
 /* Hero Image */
 
 .hero-image {
-	background-color: black;
 	padding: 80px;
-	;
 }
 
 .hero-image-blurb {
-	grid-area: item1;
-	float: left;
+	position: relative;
+	left: 100px;
+	top: 100px;
 }
 
 .hero-image-image img {
 	height: 500px;
-	float: right;
-	margin-right: 100px;
+	position: relative;
+	left: 1000px;
+	bottom: 300px;
+	z-index: -1;
 }
 
 .goDown {
-	/*display: block;*/
+	position: relative;
+	bottom: 250px;
 	text-align: center;
-	clear: both;
-	margin-top: 400px;
 }
 
 .eye {
@@ -144,8 +179,11 @@ img {
 
 .recent-work {
 	padding: 10px;
-	padding-top: 100px;
 	padding-bottom: 100px;
+}
+
+.recent-work a {
+	text-decoration: none;
 }
 
 .recent-work h2 {
@@ -192,10 +230,6 @@ img {
 	padding-top: 80px;
 }
 
-.hideme {
-	opacity: 0;
-}
-
 .viewAll {
 	padding: 10px;
 	padding-top: 50px;
@@ -238,17 +272,19 @@ img {
 
 .workNav {
 	text-align: center;
-	display: flex;
-	justify-content: space-around;
-	font-size: 40px;
+	font-size: 36px;
+	margin-bottom: 50px;
 }
 
 .workNav a {
-	padding: 20px;
+	margin: 10px;
+	font-family: Maragsa, serif;
 }
+
 
 .workNav a:hover {
 	color: 	#FF21D8 !important;
+	text-decoration: none;
 }
 
 .workContainerSite {
@@ -264,6 +300,14 @@ img {
 	padding: 40px;
 	padding-bottom: 0px;
 	margin: 10px;
+}
+
+.workContainerSite a {
+	text-decoration: none;
+}
+
+.workContainerMobile a {
+	text-decoration: none;
 }
 
 .image1 {
@@ -374,11 +418,9 @@ figcaption {
 /* About Me */
 
 .aboutMe {
-	background-color: black;
-	padding: 20px;
+	padding: 50px;
 	padding-top: 50px;
 	padding-bottom: 100px;
-	width: 100%
 }
 
 .aboutMe h1 {
@@ -387,18 +429,14 @@ figcaption {
 	margin-bottom: 50px;
 }
 
-.headshot {
-	height: 350px;
-	margin: 10px;
-	margin-left: 300px;
-	margin-right: 100px;
-	float: left;
+.aboutMe img {
+	max-height: 500px;
 }
 
 .bio-container {
 	text-align: justify;
-	width: 90%;
-	height: auto;
+	position: relative;
+	top: 50%;
 }
 
 .btn {
@@ -406,6 +444,7 @@ figcaption {
 	border-radius: 0px;
 	color: white;
 	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	text-align: center !important;
 }
 
 .btn:hover {
@@ -414,11 +453,9 @@ figcaption {
 }
 
 .mySkills {
-	background-color: black;
 	padding: 20px;
 	padding-top: 50px;
 	padding-bottom: 100px;
-	clear: both;
 }
 
 .mySkills h2 {
@@ -427,15 +464,10 @@ figcaption {
 	margin-bottom: 30px;
 }
 
-.skillsContainer {
-	display: flex;
-	justify-content: space-around;
-}
-
 .skill {
 	padding: 30px;
 	border: 2px solid white;
-	width: 20rem;
+	margin: 10px;
 }
 
 .card-img {
@@ -521,57 +553,15 @@ input[type=text], textarea {
 /* Footer */
 
 footer {
-	background-color: black;
-	text-align: center;
 	padding: 10px;
+	text-align: center;
 }
 
-.footerBorder {
-	border: 2px solid white;
-	border-radius: 10px;
-	padding: 20px;
-	padding-top: 30px;
-}
-
-#footer-logo {
-	height: 60px;
-	margin: auto;
-}
-
-.footer-bottom {
-	display: flex;
-	justify-content: space-between;
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-top: 20px;
-}
-
-p .footer {
-	font-size: 26px;
-	grid-area: copyright;
-}
-
-.footer-bottom a {
-	text-decoration: none;
-}
-
-.footer-bottom img {
-	height: 25px;
-	padding-right: 10px;
-}
-
-.footer-bottom img:hover {
-	margin-bottom: 4px;
-}
-
-.social-links {
-	grid-area: socials;
-}
 
 @media only screen and (max-width: 600px) {
 
 	.hero-image-blurb h1 {
-		font-size: 34px;
+		font-size: 40px;
 	}
 
 	/* Work */
@@ -699,7 +689,13 @@ p .footer {
 @media only screen and (max-width: 992px) {
 	
 	.navbar-brand img{
-		height: 30px;
+		height: 50px !important;
+		text-align: center !important;
+	}
+
+	.nav-link {
+		font-size: 32px;
+		margin: 0px;
 	}
 
 	.hero-image-blurb h1 {
@@ -717,13 +713,6 @@ p .footer {
 		display: flex;
 	}
 
-	.skillsContainer {
-		display: block;
-	}
-
-	.skill {
-		width: 100%;
-	}
 
 	h1 {
 		font-family: "Maragsa", 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
@@ -772,6 +761,22 @@ p .footer {
 		text-decoration-style: none;
 	}
 
+	/* Hero Image */
+
+	.hero-image-image {
+		display: none;
+	}
+
+	.hero-image-blurb {
+		display: block;
+		left: 0px;
+		top: 0px;
+	}
+
+	.hero-image-blurb h1 {
+		font-size: 62px;
+	}
+
 	/* Recent Work */
 
 .recent-work-image1 {
@@ -803,38 +808,48 @@ p .footer {
 	padding-top: 20px;
 }
 
+.viewAll a {
+	font-family: 'Maragsa', "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 62px;
+	padding-right: 30px;
+}
+
 	/* Work */
 
+	.workNav {
+		font-size: 28px;
+	}
+
 	.workContainerSite {
-		padding: 30px;
+		padding: 20px;
 		margin: 10px;
 	}
 	
 	.workContainerMobile {
-		padding: 30px;
+		padding: 20px;
 		padding-bottom: 0px;
 	}
 	
 	.image1 {
-		padding: 100px;
+		padding: 20px;
 		padding-bottom: 20px;
 		padding-top: 20px;
 	}
 	
 	.image2 {
-		padding: 100px;
+		padding: 50px;
 		padding-bottom: 0px;
 		padding-top: 20px;
 	}
 	
 	.image3 {
-		padding: 100px;
+		padding: 50px;
 		padding-bottom: 0px;
 		padding-top: 20px;
 	}
 	
 	.image4 {
-		padding: 100px;
+		padding: 20px;
 		padding-bottom: 20px;
 		padding-top: 20px;
 	}

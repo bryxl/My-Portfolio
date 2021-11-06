@@ -346,7 +346,6 @@ img {
 
 .case-study-hero {
 	padding: 40px;
-	padding-bottom: 0px;
 	border: solid 2px white;
 	border-radius: 15px;
 }
@@ -356,10 +355,8 @@ img {
 	top: 200px;
 }
 
-.cs-hero-img-holder {
-	position: relative;
-	left: 1000px;
-	bottom: 150px;
+.case-study-blurb h1 {
+	margin-bottom: 20px;
 }
 
 .case-study {
@@ -865,15 +862,11 @@ footer {
 	/* Case Study */
 
 	.case-study-blurb {
-		position: none;
-		top: 0;
+		top: 10px;
 	}
 	
-	.cs-hero-img-holder {
+	.case-study-hero img {
 		display: none;
-		position: none;
-		left: 0;
-		bottom: 0;
 	}
 
 	.case-study {

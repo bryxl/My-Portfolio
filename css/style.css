@@ -616,11 +616,8 @@ footer {
 		margin-right: 0px;
 	}
 
-
 	.goDown {
-		text-align: center;
-		clear: both;
-		margin-top: 300px;
+		bottom: 0px;
 	}
 	
 	.btn {
@@ -761,6 +758,10 @@ footer {
 		text-decoration-style: none;
 	}
 
+	.goDown {
+		bottom: 0px;
+	}
+
 	/* Hero Image */
 
 	.hero-image-image {
@@ -869,18 +870,20 @@ footer {
 	}
 	
 	.cs-hero-img-holder {
+		display: none;
 		position: none;
 		left: 0;
-		bottom: 0px;
+		bottom: 0;
 	}
-	
+
 	.case-study {
 		padding: 60px;
 	}
 	
 	.team {
-		position: relative;
-		left: 500px;
+
+		position: none;
+		left: 0px;
 	
 	}
 

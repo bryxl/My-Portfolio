@@ -145,7 +145,7 @@ img {
 }
 
 .hero-image-image img {
-	height: 500px;
+	max-height: 600px;
 	position: relative;
 	left: 1000px;
 	bottom: 300px;
